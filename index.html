@@ -7,14 +7,26 @@
     <title>День математики</title>
     <style>
      @font-face {
-    font-family: 'SpriteGraffiti'; /* Название шрифта, которое вы будете использовать */
+    font-family: 'SpriteGraffiti-1'; /* Название шрифта, которое вы будете использовать */
     src: url('SpriteGraffiti-Shadow.otf') format('opentype'); /* Путь к файлу шрифта */
+    font-weight: normal;
+    font-style: normal;
+}
+          @font-face {
+    font-family: 'SpriteGraffiti-2'; /* Название шрифта, которое вы будете использовать */
+    src: url('SpriteGraffiti-Regular.otf') format('opentype'); /* Путь к файлу шрифта */
+    font-weight: normal;
+    font-style: normal;
+}
+          @font-face {
+    font-family: 'SpriteGraffiti-3'; /* Название шрифта, которое вы будете использовать */
+    src: url('SpriteGraffiti-Extras.otf') format('opentype'); /* Путь к файлу шрифта */
     font-weight: normal;
     font-style: normal;
 }
         /* Общие стили */
         body {
-            font-family: 'SpriteGraffiti', sans-serif;
+            font-family: 'Nunito', sans-serif;
             background-color: #f0f0f0;
             color: #333;
             text-align: center;
@@ -71,7 +83,7 @@
             font-weight: bold;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
             animation: fadeIn 1.5s ease-in-out;
-            font-family: 'SpriteGraffiti', sans-serif; /* Шрифт из первой версии */
+            font-family: 'SpriteGraffiti-2', sans-serif; /* Шрифт из первой версии */
         }
 
         h2 {
@@ -79,6 +91,7 @@
             color: #555;
             margin-top: 10px;
             animation: fadeIn 2s ease-in-out;
+             font-family: 'SpriteGraffiti-1', sans-serif;
         }
 
         /* Контейнер для кнопок */
@@ -94,7 +107,7 @@
         .game-button {
             padding: 15px 30px;
             font-size: 1.2em;
-            font-family: 'Nunito', sans-serif;
+            font-family: 'SpriteGraffiti-3', sans-serif;
             color: #fff;
             background-color: #2EA692;
             border: none;
