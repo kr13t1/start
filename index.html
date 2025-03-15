@@ -126,15 +126,29 @@
             transform: translateY(-5px);
         }
 
-        /* Логотип */
+      
+/* Логотип и кнопка "Назад" */
         #logo {
             position: fixed;
             left: 20px;
             bottom: 20px;
-            width: 100px;
+            width: 100px; /* Увеличиваем размер логотипа */
             height: auto;
-            animation: fadeIn 2.5s ease-in-out;
+            z-index: 1000;
         }
+
+       @media (max-width: 600px) {
+            h1 {
+                font-size: 1.5em;
+            }
+
+            #logo {
+                width: 80px; /* Уменьшаем размер логотипа на маленьких экранах */
+            }
+        }
+
+           
+
 
         /* Анимации */
         @keyframes fadeIn {
